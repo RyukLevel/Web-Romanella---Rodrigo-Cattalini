@@ -1,0 +1,457 @@
+/* Definiciones naturales a todo el diseño */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+    section{
+    margin-top: 100px;
+    margin-bottom: 100px;    
+    }
+    .decoracion-none{      
+        text-decoration: none;
+        list-style: none;
+    }
+
+    footer nav{
+        width: 100%;
+        height: 81px;
+        display: flex;
+        position:fixed;
+        bottom: 0;
+        background-color: #F8F9FA;
+        justify-content:space-between;
+        align-items: center;
+    }
+    footer ul{
+        margin: 0;
+        padding-left: 12px !important;
+    }
+    .footer-menu ul{
+        padding: 0 !important;
+        word-spacing: 20px;
+    }
+    .footer-menu a{
+        color: #E7B3B3;
+        padding: 5px 15px;
+        border: 1px ;
+        border-radius: 5px;
+        transition: 0.5s;       
+    }
+    .footer-menu a:hover{
+        background-color: #E7B3B3;
+        color: white;
+    }
+
+    .footer-copy p{
+        margin: 0;
+    }
+    .img-redes{    
+    width: 30px;
+    }
+    .footer-copy{
+        padding-right: 12px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        text-align: end;
+        padding-right: 12px;
+        background-color:#FCDDDD;
+        color: white;      
+    }
+    /* Definiciones Index */
+    .fila-index{
+        display: flex;        
+    }
+    .texto-img h3{
+        margin: 5px 0 10px 3px;
+        text-decoration: 1px underline #E7B3B3;
+        font-family: 'Montserrat', sans-serif;                
+    }
+    .texto-img p{
+        margin: 0px 3px 16px 3px;
+    }
+    /* Definiciones Nosotros */
+    .grid-container {
+        margin: 0;
+        display: grid;        
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .one-grid {
+        grid-column: 1/2;
+        background-color: #f0efef;
+      }
+      .two-grid {
+        display: flex;
+        background-color: #f0efef;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;        
+      }
+
+      .horarios{        
+        text-align: center;
+      }      
+
+      .horarios p {
+        margin: 0 0 0px 0;
+        line-height: 25px;
+        font-size: 12px;
+      }
+      .horarios h3{
+        margin: 0px 0 8px 0px;
+        text-decoration: 1px underline #E7B3B3;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .horarios h4 {
+        margin: 0;        
+        padding: 7px;
+        border-radius: 5px;        
+        color: #e7b3b3;
+        transition: 0.5s;
+      }      
+      .horarios a {
+        text-decoration: none;
+      }
+      
+      .horarios h4:hover {
+        background-color: #e7b3b3;
+        color: white;        
+      }
+      .grid-container-two {
+        display: grid;
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px;
+        text-align: center;
+        gap: 10px;
+        padding: 0;
+      }
+      .grid-columnas {
+        color: black;
+        background-color: #f0efef;
+        opacity: 1;        
+        padding: 50px;        
+      }
+      .grid-columnas h3{
+        margin: 10px 0;
+        text-decoration: 1px underline #E7B3B3;
+        font-family: 'Montserrat', sans-serif;
+
+      }
+      .grid-columnas p{
+        margin: 0;  
+
+      }
+/* Definiciones Galeria */
+      .container-galeria {
+        margin: 0;        
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+      }
+      
+      .container-galeria img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .container-galeria img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        top: 50px;
+      }
+      
+      .galeria-1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+      .galeria-1 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        top: 50px;
+        left: 82px;
+      }
+      
+      .galeria-2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+      }
+      .galeria-3 {
+        grid-column: 4/6;
+        grid-row: 1/2;
+      }
+      
+      .galeria-4 {
+        grid-column: 6/8;
+        grid-row: 1/2;
+      }
+      .galeria-4 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        top: 50px;
+        right: 82px;
+      }
+      .galeria-5 {
+        grid-column: 1/4;
+        grid-row: 2/3;
+      }
+      .galeria-5 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        left: 124px;
+      }
+      .galeria-6 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+      }
+      .galeria-7 {
+        grid-column: 5/6;
+        grid-row: 2/3;
+      }
+      .galeria-8 {
+        grid-column: 6/8;
+        grid-row: 2/3;
+      }
+      .galeria-8 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        right: 82px;
+      }
+      .galeria-9 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+      }
+      .galeria-9 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        left: 82px;
+        top: -50px;
+      }
+      .galeria-10 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+      .galeria-10 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        top: -50px;
+      }
+      .galeria-11 {
+        grid-column: 4/7;
+        grid-row: 3/4;
+      }
+      .galeria-11 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        top: -50px;
+      }
+      .galeria-12 {
+        grid-column: 7/8;
+        grid-row: 3/4;
+      }
+      .galeria-12 img:hover {
+        transform: scale(1.3);
+        border: 4px solid white;
+        transition: 3s;
+        position: relative;
+        right: 43px;
+        top: -50px;
+      }
+      /* Definiciones Reserva */
+      section .forms-container {
+        display: grid;  
+        grid-template-rows: repeat(6);
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 50px;
+        gap: 10px 30px;  
+      }
+      main section .forms-img img {  
+        width: 100%;
+        height:100%;  
+      }
+      .forms-nombre h3{
+        margin: 0;
+        margin: 0;
+        text-decoration: 1px underline #E7B3B3;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px ;
+      }
+      div .mb-3{
+        display: flex;
+        margin: 0 !important;
+        align-items: center;
+      }
+      .forms-fecha{
+        display: flex;        
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      .forms-fecha div{        
+        margin-left: 30px !important;
+        width: 130px;      
+      }
+      .forms-fecha label{        
+        font-weight: 500;
+        color: #E7B3B3;
+      }
+      .forms-horario{
+        display: flex;        
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      .forms-horario div{
+        margin-left: 20px !important;
+        width: 130px;      
+      }
+      .forms-horario label{        
+        font-weight: 500;
+        color: #E7B3B3;
+      }
+      .forms-personas{
+        display: flex;        
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .forms-personas div{
+        margin-left: 6px !important;        
+        width: 130px;  
+      }
+      .forms-personas label{        
+        font-weight: 500;
+        color: #E7B3B3;
+      }
+      
+      
+      main section .boton-reserva{
+        display:flex;
+        justify-content:center;
+        align-items: center;  
+      }
+      main section .boton-reserva a{
+        text-decoration: none;      
+      }
+      main section .boton-reserva p{
+        color: #E7B3B3;
+        background-color: #F8F9FA;
+        padding: 10px 30px;
+        border: 1px ;
+        border-radius: 5px;
+        margin: 0;
+        transition: 0.5s;
+      }
+      main section .boton-reserva p:hover{
+        background-color: #E7B3B3;
+        color: white
+      }
+
+    
+/* Media Query Mobile */
+@media only screen and (max-width: 425px) {   
+/* Definiciones para index */
+     .fila-index{
+        display: block;        
+    }
+    .footer-menu ul{
+        display: none;
+    }
+    .footer-copy{
+        padding-right: 12px;
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+}
+/* Media Query Tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px) {   
+    /* Definiciones para index */    
+     .img-fluid{
+        width: 50%;
+        margin-bottom: 5px;
+     }
+    .texto-img{
+        margin-left: 3px;
+    }
+     .footer-menu ul{
+        padding: 0 !important;
+        text-align: center;
+        word-spacing: 1px;
+    }
+    .footer-menu a{
+        font-size: 12px;        
+        padding: 3px 6px;  
+}
+.img-redes{    
+    width: 30px;
+    }
+    .footer-copy p{
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+/* Media Query Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {  
+ /* Definiciones para index */        
+     .img-fluid{
+        width: 60%;
+        margin-bottom: 5px;
+     }
+     .texto-img p{
+        font-size: 20px;
+    }
+    .footer-menu a{
+        font-size: 12px;        
+        padding: 3px 6px;  
+}
+
+}
+/* Media Query Laptop */
+@media only screen and (min-width: 1025px) {   
+    /* Definiciones para index */   
+     .img-fluid{
+        width: 35%;
+        margin-bottom: 5px;
+     }
+     .texto-img p{
+        font-size: 24px;
+        margin: 0 300px 0 40px;
+    }
+    .texto-img h3{
+        margin: 5px 40px 10px 40px;
+        text-decoration: 1px underline #E7B3B3;        
+    }
+    img .w-100{
+        width: 20% !important;
+    }
+}
+
+
+
+
